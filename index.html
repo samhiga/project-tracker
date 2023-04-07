@@ -28,11 +28,11 @@
 
     <div class="containter">
         <div class="row">
-             <div class="col-6 col-md-4" >
+             <div class="col-md-4" >
                 <h1>Instructions:</h1>
                 <p>Click the button to open a form and provide information for the following:</p>
                 <form id="project-form">
-                    <fieldset disabled>
+                    <fieldset>
                         <legend>Disabled fieldset example</legend>
                         <div class="mb-3">
                             <label for="textInput" class="form-label">Project Name</label>
@@ -41,7 +41,14 @@
                         <div class="mb-3">
                             <label for="disabledSelect" class="form-label">Project Type</label>
                             <select id="disabledSelect" class="form-select">
-                                <option>Disabled select</option>
+                              <option value="">Select an option</option>
+                              <option value="option1">C</option>
+                              <option value="option2">C++</option>
+                              <option value="option3">CSS</option>
+                              <option value="option3">CSS</option>
+                              <option value="option3">CSS</option>
+                              <option value="option3">CSS</option>
+                              <option value="option3">CSS</option>
                             </select>
                         </div>
                         <p>Due Date: <input type="text" id="datepicker"></p>
@@ -54,7 +61,7 @@
 
 
 
-             <div class="col-12 col-md-8"> 
+             <div class="col-md-8"> 
                 <table class="table">
                     <thead>
                       <tr>
@@ -89,7 +96,6 @@
             </div>
         </div>
     </div>
-
 
 
 

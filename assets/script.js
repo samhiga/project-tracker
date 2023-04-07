@@ -8,9 +8,9 @@ var tableRowEl = $('.table td');
 
 
 var printProject = function (project, date) {
-  var projectTableEl = $('.table');
+  var fieldSet = document.getElementById("text-input")
   var projectDetail = project.concat(' on ', date);
-  projectNameEl.appendTo(tableRowEl);
+  fieldSet.appendTo(tableRowEl);
 };
 
 
@@ -33,6 +33,13 @@ var handleFormSubmit = function (event) {
   projectNameEl.val('');
   dateInputEl.val('');
 };
+
+$("#form-select").change(function() {
+  // Get the selected value of the dropdown menu
+  var selectedValue = $(this).val();
+  // Do something with the selected value
+  console.log("Selected value: " + selectedValue);
+}
 
 
 
