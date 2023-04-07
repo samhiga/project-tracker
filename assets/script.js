@@ -13,7 +13,7 @@ var printProject = function (project, date) {
   fieldSet.appendTo(tableRowEl);
 };
 
-
+projectFormEl.on('submit', handleFormSubmit)
 
 
 var handleFormSubmit = function (event) {
@@ -39,7 +39,7 @@ $("#form-select").change(function() {
   var selectedValue = $(this).val();
   // Do something with the selected value
   console.log("Selected value: " + selectedValue);
-}
+});
 
 
 
