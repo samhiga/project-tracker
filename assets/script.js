@@ -4,6 +4,8 @@ var dateInputEl = $('#datepicker');
 var projectTableEl = $('.table');
 var projectTypeEl = $('.form-label');
 var tableRowEl = $('.table td');
+var backColor = document.querySelector("#color")
+
 
 
 
@@ -67,12 +69,14 @@ $(document).ready(function (){
     }, 1000);
     });
 
-    $(function () {
-        $('#datepicker').datepicker({
-          changeMonth: true,
-          changeYear: true,
-        });
+    $( function() {
+      $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "images/calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Select date"
       });
+    } );
 
 
      
